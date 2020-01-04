@@ -1,0 +1,22 @@
+name: MaxEnchants
+main: com.nukkitx.linmiao233.MiaoEnchantsMax.Main
+version: "1.0.0"
+api: ["1.0.0"]
+
+load: POSTWORLD
+author: linmiao233
+description: 允许您使用“不安全”的附魔
+website: http://bbs.i8mc.xyz
+commands:
+  喵附魔:
+    description: 使用喵附魔来附魔你手上的东西.
+    usage: "/喵附魔 <玩家名字> <附魔中文名/ID> <等级: 1 - 32767>"
+    permission: Miao.enchants
+  查看附魔表:
+    description: 查看附魔表.
+    usage: " "
+    permission: null
+Miao.enchants:
+  ME.addenchant:
+    description: "可以让玩家使用喵附魔来附魔你手上的东西."
+    default: op
